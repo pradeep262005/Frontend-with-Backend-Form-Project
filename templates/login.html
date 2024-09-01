@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style1.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="heading"><h1>Login Page</h1></div>
+        <form class="form" id="form" onsubmit=checki()>
+            <div class="info">
+                <label><ion-icon name="person-circle" size="large"></ion-icon>Name</label>
+                <input type="text" placeholder="Enter your name" id="user">
+                <div class="error"></div>
+            </div>
+            <div class="info">
+                <label><ion-icon name="mail" size="zoom:5.0" ></ion-icon>E-Mail</label>
+                <input type="email" placeholder="Enter your e-mail" id="mail">
+                <div class="error"></div>
+            </div>
+            <div class="info">
+                <label><ion-icon name="color-wand" size="large"></ion-icon>Password</label>
+                <input type="password" placeholder="Enter your Password" id="pwd">
+                <div class="error"></div>
+            </div>
+            <div class="info">
+                <label><ion-icon name="color-wand" size="large"></ion-icon>Confirm Password</label>
+                <input type="password" placeholder="Confirm your Password" id="pwd2">
+                <div class="error"></div>
+            </div><br>
+            <button type="submit" value="submit">Submit</button><br><br>
+            <button type="reset">Reset</button>
+        </form>
+        <script src="index1.js"></script>
+    </div>
+</body>
+</html>
